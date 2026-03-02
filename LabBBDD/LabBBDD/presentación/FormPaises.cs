@@ -47,7 +47,7 @@ namespace LabBBDD.presentación
                 numBaseImpuestos.Value = p.BaseImpuestos;
                 btnInsertar.Enabled = false;
                 btnEliminar.Enabled = true;
-                btnActualizar.Enabled = false;
+                btnActualizar.Enabled = true;
             }
         }
 
@@ -56,7 +56,7 @@ namespace LabBBDD.presentación
             if (txtId.Text != string.Empty)
             {
                 Pais pais = new Pais(txtId.Text);
-                if (MessageBox.Show("Estas seguro de borrar" + pais.Id + "?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("Estas seguro de borrar " + pais.Id + "?", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
 
                     try
@@ -66,6 +66,8 @@ namespace LabBBDD.presentación
                             int indice = lstPaises.SelectedIndex;
                             lstPaises.Items.RemoveAt(indice);
                             btnLimpiar.PerformClick();
+                            btnInsertar.Enabled = true; // borrar?
+                            btnActualizar.Enabled = true; // borrar?
                         }
                     }
                     catch (Exception ex)
