@@ -14,7 +14,7 @@ namespace LabBBDD.persistencia
 
         private AgenteBD()
         {
-            AgenteBD.connectionString = "server=localhost;database=Company;uid=root;pwd=contrasena1;CharSet=utf8;";
+            AgenteBD.connectionString = "server=localhost;database=Company;uid=root;pwd=277353;CharSet=utf8;";
             AgenteBD.connection = new MySqlConnection(AgenteBD.connectionString);
         }
         public static AgenteBD GetInstance()

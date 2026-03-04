@@ -112,15 +112,25 @@ namespace LabBBDD.presentación
         }
         private string obtenerId(string nombre)
         {
-            string idBase = nombre.Substring(0, 3).ToUpper();
+            string nombreNorm = new string(
+                nombre.Normalize(System.Text.NormalizationForm.FormD)
+                      .Where(c => System.Globalization.CharUnicodeInfo.GetUnicodeCategory(c)
+                                  != System.Globalization.UnicodeCategory.NonSpacingMark)
+                      .ToArray()
+            ).ToUpper();
+
+            string idBase = nombreNorm.Substring(0, Math.Min(3, nombreNorm.Length)).PadRight(3, 'A');
             string Id = idBase;
-            bool existe = false;
-            Pais pAux = new Pais();
-            for (int i = 2; i < nombre.Length && existe; i++)
+
+            int letraIdx = 3;
+            Pais pAux = new Pais("_"); 
+
+            while (pAux.IdExiste(Id) && letraIdx < nombreNorm.Length)
             {
-                Id = idBase + nombre.Substring(i, 2).ToUpper();
-                existe = !pAux.IdExiste(Id);
+                Id = idBase.Substring(0, 2) + nombreNorm[letraIdx];
+                letraIdx++;
             }
+
             return Id;
         }
 

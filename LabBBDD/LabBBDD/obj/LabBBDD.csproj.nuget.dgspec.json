@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hector\\source\\repos\\LabBBDD\\LabBBDD\\LabBBDD.csproj": {}
+    "C:\\Users\\oscar\\source\\repos\\LabBBDD\\LabBBDD\\LabBBDD.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hector\\source\\repos\\LabBBDD\\LabBBDD\\LabBBDD.csproj": {
+    "C:\\Users\\oscar\\source\\repos\\LabBBDD\\LabBBDD\\LabBBDD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hector\\source\\repos\\LabBBDD\\LabBBDD\\LabBBDD.csproj",
+        "projectUniqueName": "C:\\Users\\oscar\\source\\repos\\LabBBDD\\LabBBDD\\LabBBDD.csproj",
         "projectName": "LabBBDD",
-        "projectPath": "C:\\Users\\hector\\source\\repos\\LabBBDD\\LabBBDD\\LabBBDD.csproj",
-        "packagesPath": "C:\\Users\\hector\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hector\\source\\repos\\LabBBDD\\LabBBDD\\obj\\",
+        "projectPath": "C:\\Users\\oscar\\source\\repos\\LabBBDD\\LabBBDD\\LabBBDD.csproj",
+        "packagesPath": "C:\\Users\\oscar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\oscar\\source\\repos\\LabBBDD\\LabBBDD\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\hector\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\oscar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
